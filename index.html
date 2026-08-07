@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portofolio Muhammad Reihan Prasetya — multimedia, videografi, desain grafis, UI/UX, dan pengembangan pengalaman interaktif.">
+    <meta name="theme-color" content="#f7f8fc" id="theme-color-meta">
+    <title>Portofolio 2026 – Muhammad Reihan Prasetya</title>
+    <link rel="icon" href="img/logo/Reiproduction.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script>
+        (() => {
+            let savedTheme = null;
+            try {
+                savedTheme = localStorage.getItem("portfolio-theme");
+            } catch (error) {
+                savedTheme = null;
+            }
+            const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            document.documentElement.dataset.theme = savedTheme || (systemDark ? "dark" : "light");
+        })();
+    </script>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body class="bg-stone-100 text-stone-800 leading-relaxed">
+    <a class="skip-link" href="#beranda">Lewati ke konten utama</a>
+
+    <div class="site-background" aria-hidden="true">
+        <span class="background-orb orb-one"></span>
+        <span class="background-orb orb-two"></span>
+        <span class="background-grid"></span>
+    </div>
+
+    <nav class="site-nav fixed w-full z-50 top-0" aria-label="Navigasi utama">
+        <div class="container nav-inner mx-auto px-4 sm:px-6">
+            <a href="#beranda" class="brand-link" aria-label="Kembali ke beranda">
+                <img src="img/logo/Reihan-nav.webp" alt="Foto profil Muhammad Reihan Prasetya" class="brand-avatar" onerror="this.onerror=null;this.src='https://placehold.co/40x40/A8A29E/FFFFFF?text=MR';">
+                <span class="brand-copy">
+                    <strong>Muhammad Reihan Prasetya</strong>
+                    <small>Creative Portfolio</small>
+                </span>
+            </a>
+
+            <div class="desktop-nav hidden xl:flex" aria-label="Menu desktop">
+                <a href="#beranda" class="nav-item nav-link">Beranda</a>
+                <a href="#pengalaman" class="nav-item nav-link">Pengalaman</a>
+                <a href="#proyek" class="nav-item nav-link">Proyek</a>
+                <a href="#keahlian" class="nav-item nav-link">Keahlian</a>
+                <a href="#volunteer" class="nav-item nav-link">Volunteer</a>
+                <a href="#sertifikasi" class="nav-item nav-link">Sertifikasi</a>
+                <a href="#pendidikan" class="nav-item nav-link">Pendidikan</a>
+                <a href="#kontak" class="nav-item nav-link">Kontak</a>
+            </div>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-button theme-toggle" type="button" aria-label="Aktifkan mode gelap" title="Ubah tema">
+                    <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path>
+                    </svg>
+                    <svg class="theme-icon theme-icon-light" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M9 18h6M10 22h4M8.3 14.7A7 7 0 1 1 15.7 14.7C14.7 15.5 14 16.5 14 18h-4c0-1.5-.7-2.5-1.7-3.3Z"></path>
+                    </svg>
+                </button>
+                <button id="mobile-menu-button" class="icon-button xl:hidden" type="button" aria-label="Buka menu navigasi" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="menu-lines" aria-hidden="true"><span></span><span></span><span></span></span>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu xl:hidden hidden" aria-label="Menu mobile">
+            <div class="container mx-auto px-4 sm:px-6 py-3">
+                <a href="#beranda" class="nav-link mobile-nav-link">Beranda</a>
+                <a href="#pengalaman" class="nav-link mobile-nav-link">Pengalaman</a>
+                <a href="#proyek" class="nav-link mobile-nav-link">Proyek</a>
+                <a href="#keahlian" class="nav-link mobile-nav-link">Keahlian</a>
+                <a href="#volunteer" class="nav-link mobile-nav-link">Volunteer</a>
+                <a href="#sertifikasi" class="nav-link mobile-nav-link">Sertifikasi</a>
+                <a href="#pendidikan" class="nav-link mobile-nav-link">Pendidikan & Organisasi</a>
+                <a href="#kontak" class="nav-link mobile-nav-link">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="site-main container mx-auto px-4 sm:px-6">
+        <section id="beranda" class="section hero-section fade-in">
+            <div class="hero-layout">
+                <div class="hero-visual">
+                    <div class="profile-ring">
+                        <img src="img/logo/Reihan-hero.webp" alt="Foto profil Muhammad Reihan Prasetya" class="hero-photo" fetchpriority="high" onerror="this.onerror=null;this.src='https://placehold.co/420x420/A8A29E/FFFFFF?text=Muhammad+Reihan';">
+                    </div>
+                    <span class="floating-chip chip-one"><i class="fas fa-pen-nib"></i> Graphic Design</span>
+                    <span class="floating-chip chip-two"><i class="fas fa-video"></i> Multimedia</span>
+                </div>
+
+                <div class="hero-content">
+                    <span class="eyebrow"><i class="fas fa-star" aria-hidden="true"></i> Portfolio 2026</span>
+                    <h1 class="hero-title">Muhammad Reihan <span>Prasetya</span></h1>
+                    <p class="hero-lead">Mahasiswa Politeknik Negeri Batam yang berfokus pada Multimedia, Videografi, Produksi Konten, Desain Grafis, serta UI/UX untuk website dan aplikasi mobile.</p>
+                    <p class="hero-description">
+                        Selamat datang di portofolio saya. Di sini Anda dapat melihat perjalanan akademik, pengalaman profesional, proyek kreatif, dan keterampilan yang terus saya kembangkan untuk berkontribusi di industri kreatif dan teknologi.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#proyek" class="primary-button"><span>Lihat Proyek</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        <a href="#kontak" class="secondary-button"><i class="fas fa-paper-plane" aria-hidden="true"></i><span>Hubungi Saya</span></a>
+                    </div>
+                    <div class="hero-meta" aria-label="Ringkasan bidang keahlian">
+                        <span><strong>5+</strong> Bidang Kreatif</span>
+                        <span><strong>9+</strong> Proyek Pilihan</span>
+                        <span><strong>Batam</strong> Indonesia</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pengalaman" class="section fade-in">
+            <h2 class="section-heading text-4xl font-bold text-center text-sky-700 mb-12">Pengalaman Profesional</h2>
+            <p class="section-intro text-center text-lg text-stone-700 mb-10 max-w-2xl mx-auto">
+                Pengalaman kerja dan magang saya memberikan banyak pelajaran berharga tentang bagaimana dunia profesional sebenarnya berjalan. Di berbagai peran dan lingkungan kerja, saya belajar menerapkan keahlian secara langsung, beradaptasi dengan cepat, dan berkolaborasi secara efektif. Setiap pengalaman ini membantu saya tumbuh. bukan hanya secara teknis, tapi juga secara pribadi dan profesional.
+            </p>
+            <div id="experience-container" class="space-y-8">
+                </div>
+        </section>
+
+        <section id="proyek" class="section fade-in">
+            <h2 class="section-heading text-4xl font-bold text-center text-sky-700 mb-12">Proyek Unggulan</h2>
+            <p class="section-intro text-center text-lg text-stone-700 mb-10 max-w-2xl mx-auto">
+                Berikut adalah beberapa proyek yang telah saya kerjakan, baik secara individu maupun dalam tim. Proyek-proyek ini mencerminkan bagaimana saya menerapkan keahlian di bidang videografi, desain grafis, UI/UX, hingga pengembangan game dalam bentuk karya nyata yang kreatif dan berdampak. Setiap proyek adalah peluang untuk belajar dan berkembang lebih jauh.
+            </p>
+            <div id="projects-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                </div>
+        </section>
+
+        <section id="keahlian" class="section fade-in">
+            <h2 class="section-heading text-4xl font-bold text-center text-sky-700 mb-12">Keahlian Utama</h2>
+             <p class="section-intro text-center text-lg text-stone-700 mb-10 max-w-2xl mx-auto">
+                Saya memiliki beragam keahlian teknis dan kreatif yang terus saya kembangkan seiring waktu. Mulai dari desain grafis, editing video, hingga pengembangan aplikasi dan game. setiap keterampilan saya pelajari dengan semangat eksplorasi dan rasa ingin tahu yang tinggi. Di bagian ini, saya merinci kompetensi utama saya yang mendukung kontribusi saya dalam berbagai proyek dan kolaborasi.
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-stone-700">
+                <div class="surface-card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="skill-category-title text-sky-700"><i class="fas fa-video mr-2"></i>Multimedia & Desain</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Videografi & Fotografi</li>
+                        <li>Video Editing (Adobe Premiere Pro, After Effects)</li>
+                        <li>Desain Grafis (CorelDRAW, Illustrator, Photoshop, Lightroom)</li>
+                        <li>UI/UX Design (Figma)</li>
+                        <li>Blender (3D Modeling, Animasi, Rendering)</li>
+                    </ul>
+                </div>
+                <div class="surface-card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="skill-category-title text-sky-700"><i class="fas fa-bullhorn mr-2"></i>Produksi Konten & Broadcasting</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Produksi Video (Pra-produksi, Produksi, Pasca-produksi)</li>
+                        <li>Produksi Film (Penulisan Naskah, Penyutradaraan, Editing Akhir)</li>
+                        <li>Broadcasting (Switcher, OBS Studio)</li>
+                    </ul>
+                </div>
+                 <div class="surface-card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="skill-category-title text-sky-700"><i class="fas fa-gamepad mr-2"></i>Pengembangan Game & VR</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Unity (Pengembangan Game, Simulasi, Pengalaman Interaktif)</li>
+                        <li>Virtual Reality (Pengembangan & Pengujian Konten VR)</li>
+                        <li>Gameplay Testing</li>
+                    </ul>
+                </div>
+                <div class="surface-card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="skill-category-title text-sky-700"><i class="fas fa-tools mr-2"></i>Lain-lain</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+                        <li>Komunikasi Visual</li>
+                        <li>Kerja Tim</li>
+                        <li>Adaptif</li>
+                        <li>Kru Outlet (Persiapan makanan, pelayanan pelanggan, kasir)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="volunteer" class="section fade-in">
+            <h2 class="section-heading text-4xl font-bold text-center text-sky-700 mb-12">Pengalaman Volunteer</h2>
+            <p class="section-intro text-center text-lg text-stone-700 mb-10 max-w-2xl mx-auto">
+                Terlibat dalam kegiatan volunteer memberikan saya kesempatan untuk berkontribusi secara nyata kepada masyarakat sekaligus belajar banyak hal baru. Dari pengalaman ini, saya mengasah kemampuan bekerja dalam tim, beradaptasi dengan lingkungan yang beragam, serta memperkuat keterampilan komunikasi dan empati.
+            </p>
+            <div id="volunteer-container" class="space-y-8">
+                </div>
+        </section>
+
+        <section id="sertifikasi" class="section fade-in">
+            <h2 class="section-heading text-4xl font-bold text-center text-sky-700 mb-12">Sertifikasi & Pelatihan</h2>
+            <p class="section-intro text-center text-lg text-stone-700 mb-10 max-w-2xl mx-auto">
+                Saya percaya bahwa pembelajaran tidak berhenti di bangku kuliah. Karena itu, saya aktif mengikuti berbagai sertifikasi dan pelatihan untuk terus mengasah kemampuan dan memperluas wawasan. Komitmen ini membantu saya tetap relevan dengan perkembangan industri serta menambah nilai dalam setiap peran yang saya jalani.
+            </p>
+            <div id="sertifikasi-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                </div>
+        </section>
+
+        <section id="pendidikan" class="section fade-in">
+            <h2 class="section-heading text-4xl font-bold text-center text-sky-700 mb-12">Pendidikan & Organisasi</h2>
+            <p class="section-intro text-center text-lg text-stone-700 mb-10 max-w-2xl mx-auto">
+                Pendidikan formal dan pengalaman organisasi menjadi fondasi penting dalam membentuk cara saya berpikir dan bekerja. Melalui pembelajaran dan partisipasi aktif dalam organisasi, saya mengembangkan kemampuan kolaborasi, komunikasi, serta kepemimpinan.
+            </p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <article class="surface-card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-sky-600 mb-5"><i class="fas fa-graduation-cap mr-2" aria-hidden="true"></i>Pendidikan</h3>
+                    <div class="timeline-list">
+                        <div class="timeline-item">
+                            <h4 class="text-xl font-semibold text-stone-700">Politeknik Negeri Batam – Batam</h4>
+                            <p class="text-stone-600">Teknik Informatika – D4 Teknik Multimedia & Jaringan, IPK: 3.67/4.00</p>
+                            <p class="text-sm text-stone-500">Agustus 2022 – Sekarang</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 class="text-xl font-semibold text-stone-700">SMK Negeri 5 Batam – Batam</h4>
+                            <p class="text-stone-600">Jurusan Produksi Grafika, nilai akhir: 85.65</p>
+                            <p class="text-sm text-stone-500">Juli 2019 – Juli 2022</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="surface-card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-sky-600 mb-5"><i class="fas fa-users mr-2" aria-hidden="true"></i>Organisasi</h3>
+                    <div class="timeline-list">
+                        <div class="timeline-item">
+                            <h4 class="text-xl font-semibold text-stone-700">Reka Multimedia Polibatam (REKAM)</h4>
+                            <p class="text-stone-600">Divisi Produksi (2023–2024), Anggota Umum (2024–2025)</p>
+                            <p class="text-sm text-stone-500 mt-1">Terlibat dalam program produksi, workshop kreatif, festival, pengaderan, dan kegiatan internal organisasi.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 class="text-xl font-semibold text-stone-700">Badan Eksekutif Mahasiswa Polibatam</h4>
+                            <p class="text-stone-600">Kementerian KOMINFO – Magang (2024)</p>
+                            <p class="text-sm text-stone-500 mt-1">Terlibat dalam pengaderan, forum media ormawa, pengabdian staf muda, dan kegiatan internal BEM.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 class="text-xl font-semibold text-stone-700">Youtuber Batam</h4>
+                            <p class="text-stone-600">Anggota (2020–2022)</p>
+                            <p class="text-sm text-stone-500 mt-1">Berkolaborasi dalam produksi beberapa film pendek komunitas.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="kontak" class="section flex flex-col justify-center items-center text-center fade-in">
+            <div class="contact-panel max-w-2xl">
+                <span class="eyebrow"><i class="fas fa-comments" aria-hidden="true"></i> Mari Berkolaborasi</span>
+                <h2 class="section-heading text-4xl font-bold text-sky-700 mb-8">Hubungi Saya</h2>
+                <p class="text-lg text-stone-700 mb-8">
+                    Saya terbuka untuk peluang kerja, kolaborasi proyek, dan diskusi kreatif. Silakan hubungi saya melalui salah satu kanal berikut.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:mreihanp17@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope" aria-hidden="true"></i><span>mreihanp17@gmail.com</span>
+                    </a>
+                    <span class="contact-link contact-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Kota Batam, Kepulauan Riau, Indonesia</span>
+                    </span>
+                    <a href="https://www.instagram.com/reiijourney" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <i class="fab fa-instagram" aria-hidden="true"></i><span>@reiijourney</span>
+                    </a>
+                    <a href="https://www.instagram.com/portofolioreihan" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <i class="fab fa-instagram" aria-hidden="true"></i><span>@portofolioreihan</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/reihanprasetya" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i><span>linkedin.com/in/reihanprasetya</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="certificate-modal" class="media-modal fixed inset-0 flex items-center justify-center z-[100] hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-panel">
+            <h2 id="modal-title" class="sr-only">Pratinjau gambar</h2>
+            <button id="close-modal-btn" class="modal-button modal-close" type="button" aria-label="Tutup pratinjau gambar">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <button id="modal-prev-cert-btn" class="modal-button modal-prev hidden" type="button" aria-label="Gambar sebelumnya">
+                <span aria-hidden="true">&#10094;</span>
+            </button>
+            <img id="modal-certificate-img" src="" alt="Pratinjau dokumentasi" class="modal-image">
+            <button id="modal-next-cert-btn" class="modal-button modal-next hidden" type="button" aria-label="Gambar berikutnya">
+                <span aria-hidden="true">&#10095;</span>
+            </button>
+        </div>
+    </div>
+
+    <button id="scroll-top-button" class="scroll-top-button" type="button" aria-label="Kembali ke atas">
+        <span aria-hidden="true">&#8593;</span>
+    </button>
+
+    <footer class="site-footer text-center py-8 mt-12">
+        <div class="container mx-auto px-4 flex flex-col items-center justify-center">
+            <img src="img/logo/Reiproduction.svg" alt="Logo Rei Production" class="footer-logo" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/96x96/FFFFFF/000000?text=LOGO';">
+            <p>&copy; <span id="currentYear"></span> Rei Production. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
