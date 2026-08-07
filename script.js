@@ -1034,7 +1034,7 @@ function setupRevealAnimations() {
             entry.target.classList.add('is-visible');
             revealObserver.unobserve(entry.target);
         });
-    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    }, { threshold: 0, rootMargin: '0px 0px -10px 0px' });
 
     remainingSections.forEach((section) => observer.observe(section));
 }
