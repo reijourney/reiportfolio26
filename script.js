@@ -23,7 +23,8 @@ const experiences = [
       "img/experience/seragamin_a/seragamin_a4.webp",
       "img/experience/seragamin_a/seragamin_a5.webp",
       "img/experience/seragamin_a/seragamin_a6.webp",
-      "img/experience/seragamin_a/seragamin_a7.webp"
+      "img/experience/seragamin_a/seragamin_a7.webp",
+      "img/experience/seragamin_a/seragamin_a8.webp"
     ]
   },
   {
